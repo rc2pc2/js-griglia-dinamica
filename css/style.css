@@ -42,5 +42,23 @@ section#grid > article.square{
 section#grid,
 section#grid .square{
     border: 2px solid white;
+    color: white;
+    font-size: 1.5rem;
 }
 
+section#grid .square > span{
+    display: none;
+}
+
+section#grid .square.clicked{
+    background-color: aqua;
+}
+
+section#grid .square.clicked-odd{
+    background-color: magenta;
+}
+
+section#grid .square.clicked > span,
+section#grid .square.clicked-odd> span{
+    display: inline;
+}

@@ -1,0 +1,46 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Montserrat";
+    background-color:  #011627;
+}
+
+main{
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+section#grid{
+    margin: 0 auto;
+    width: 650px;
+    height: 650px;
+}
+
+section#grid > article.square{
+    float: left;
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    cursor: crosshair;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section#grid,
+section#grid .square{
+    border: 2px solid white;
+}
+

@@ -1,8 +1,4 @@
-
-
-
 //# <article class="square"></article>
-
 
 // creo una funzione che non ha argomenti
 function generateNewGridSquare(){
@@ -19,7 +15,6 @@ function generateNewGridSquare(){
 // # recupero dal DOM l'elemento section con id grid e
 // # lo assegno ad una nuova variabile globale gridElement
 const gridElement = document.querySelector('section#grid');
-
 
 // # ripeto per 64 volte
 for (let index = 0; index < 64; index++) {
